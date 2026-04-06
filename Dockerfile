@@ -1,14 +1,13 @@
-FROM python:3.9-alpine
+FROM python:3.9-slim
 
 WORKDIR /app
-
-RUN apk add --no-cache gcc musl-dev linux-headers
-
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 80
+RUN mkdir -p templates && mv index.html templates/
+
+EXPOSE 5000
 
 CMD ["python", "app.py"]
