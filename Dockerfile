@@ -6,7 +6,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN mkdir -p templates && mv index.html templates/
 
 EXPOSE 5000
 
