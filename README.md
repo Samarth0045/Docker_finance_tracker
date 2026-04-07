@@ -1,24 +1,24 @@
 Finance Tracker - Dockerized Flask App on AWS EC2
 
-Project Overview
+Project Overview:-
   This project is a Finance Tracker application built using Python Flask and SQLite3. 
   It is designed to help users track their income and expenses through a dynamic web dashboard. 
   The application is fully containerized using Docker and deployed on an AWS EC2 (Ubuntu) instance to ensure scalability, consistency, and high availability.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-Key Features
-  Full-Stack Integration: Combined HTML/CSS/JS frontend with a Flask backend.
-  Containerized Environment: Packaged with all dependencies using Docker for seamless deployment.
-  Data Persistence: Implemented Docker Volumes to ensure financial records in finance.db are not lost when containers restart.
-  Cloud Deployment: Hosted on AWS EC2, making the tracker accessible via a public IP.
+Key Features:-
+  |Full-Stack Integration: | Combined HTML/CSS/JS frontend with a Flask backend.|
+  |Containerized Environment: | Packaged with all dependencies using Docker for seamless deployment.|
+  |Data Persistence: | Implemented Docker Volumes to ensure financial records in finance.db are not lost when containers restart.|
+  |Cloud Deployment: | Hosted on AWS EC2, making the tracker accessible via a public IP.|
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Tech Stack
+  Tech Stack:-
     Language: Python 3.9 
     Framework: Flask 
     Database: SQLite3 
     Platform: Docker 
     Cloud: AWS EC2 (Ubuntu)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-Project Structure
+Project Structure:-
 my-project/
 ├── app.py              # Main Flask Application
 ├── finance.db          # SQLite Database (Persistent)
@@ -27,7 +27,7 @@ my-project/
 └── templates/
     └── index.html      # Web Dashboard
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-Deployment Commands
+Deployment Commands:-
 1. Build the Docker Image
 Run this command in the project root to build the image using the Dockerfile:
   docker build -t finance-tracker-app .
@@ -43,7 +43,7 @@ To see the real-time activity of your Flask app:
 4. Verify Database Records
 To view stored transactions directly from the terminal:
   sqlite3 finance.db "SELECT * FROM transactions;"
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 How to Access
 Once the container is running on AWS, access the app at:
   http://<YOUR-EC2-PUBLIC-IP>:8080
