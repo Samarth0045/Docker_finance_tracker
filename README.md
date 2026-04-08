@@ -129,12 +129,7 @@ docker rmi finance-tracker-app
   User Authentication: Adding Login/Signup for multiple users.
   Data Visualization: Integrating Chart.js to show spending patterns in graphs.
   Advanced Database: Migrating from SQLite to AWS RDS (MySQL/PostgreSQL) for better scalability.
---------------------------------------------------------------------------------------------------------------------------------------------------------
-Final Checklist:
-  Public IP Check: Udya presentation chya veli EC2 cha Public IP badalla asu shakto (jar instance stop karun start kela tar). Ekda IP verify kara.
-  Screenshot: Tujhya PPT madhe docker ps ani docker logs che screenshots naki dakhva, te proof mhanun kaam kartat.
-  Kachra Saaf: Folder madhle te vichtra navache temporary files (085da63...) delete kelet ka te ekda check kara.
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 1. Git Initial Setup (First Time)
 git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
